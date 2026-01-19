@@ -1,5 +1,6 @@
 # Thymer-Solarized-Theme
 These themes are designed for the Thymer notes application. Designed around the [Solarized colour palette](https://ethanschoonover.com/solarized/).
+They still need work in less obvious spots... and also with the horrible banner gradient, which I don't think we can change right now 
 
 # Contents
   - Thymer Solarized Light CSS
