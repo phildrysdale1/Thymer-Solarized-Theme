@@ -1,0 +1,176 @@
+/* Solarized Light theme by phild - based on Ethan Schoonover's Solarized color scheme */
+html[data-theme="basic-solarized-light"] {
+    color-scheme: light;
+
+   /* Base backgrounds - Solarized's precision monotones (inverted for light) */
+	--color-bg-50: #586e75;   /* base01 - emphasized content */
+	--color-bg-100: #657b83;  /* base00 - body text */
+	--color-bg-150: #839496;  /* base0 - primary content */
+	--color-bg-200: #93a1a1;  /* base1 - optional emphasized / comments */
+	--color-bg-300: #93a1a1;  /* base1 */
+	--color-bg-400: #eee8d5;  /* base2 - background highlights */
+	--color-bg-500: #eee8d5;  /* base2 */
+	--color-bg-600: #fdf6e3;  /* base3 - background */
+	--color-bg-700: #fdf6e3;  /* base3 */
+	--color-bg-800: #fdf6e3;  /* base3 */
+	--color-bg-900: #fdf6e3;  /* base3 */
+	--color-bg-950: #fffef9;  /* Lighter than base3 */
+	--color-bg-500-50: rgba(238, 232, 213, 0.5);
+	--color-bg-950-50: rgba(255, 254, 249, 0.65);
+
+	/* Blue primary - Solarized's signature blue accent */
+	--color-primary-50: #e3f2fd;   /* Light blue tint */
+	--color-primary-100: #bbdefb;  /* Light blue */
+	--color-primary-200: #90caf9;  /* Medium light blue */
+	--color-primary-300: #64b5f6;  /* Medium blue */
+	--color-primary-400: #268bd2;  /* Solarized Blue 268bd2 */
+	--color-primary-500: #2176b8;  /* Darker blue */
+	--color-primary-600: #1c619d;  /* Darker blue */
+	--color-primary-700: #174c83;  /* Deep blue */
+	--color-primary-800: #123769;  /* Deep blue */
+	--color-primary-900: #0d224e;  /* Very deep blue */
+	--color-primary-950: #081534;  /* Darkest blue */
+	--color-primary-400-70: rgba(38, 139, 210, 0.7);
+	--color-primary-950-20: rgba(8, 21, 52, 0.2);
+	--color-primary-text-100: #fdf6e3;
+
+	/* Text - Solarized's carefully balanced monotones (inverted for light) */
+	--color-text-50: #657b83;   /* base00     Page Title               657b83 */
+	--color-text-100: #002b36;  /* base03     Sidebar Highlight text   657b83 */
+	--color-text-200: #657b83;  /* base00     Sidebar Icons            586e75 */ 
+	--color-text-300: #657b83;  /* base00     Journal Upcoming         657b83 */
+	--color-text-400: #657b83;  /* base00     Textcolor text           657b83 */
+	--color-text-500: #657b83;  /* base00     Sidebar Text             657b83 */
+	--color-text-600: #93a1a1;  /* base1                               93a1a1 */
+	--color-text-700: #859900;  /* green      Sidebar folding arrow    eee8d5 */
+	--color-text-800: #657b83;  /* base00     Sidebar Headers          eee8d5 */
+	--color-text-900: #eee8d5;  /* base2                               eee8d5 */
+  	--color-text-950: #586e75;  /* base01                              fdf6e3 */
+
+	/* Semantic colors from Solarized palette */
+	--text-ok: #859900;         /* Green */
+	--text-status-online: #859900;
+	--text-warning: #cb4b16;    /* Orange */
+	--text-error: #dc322f;      /* Red */
+	--bg-alert: #dc322f;
+	--fg-alert: #fdf6e3;
+
+	/* Links - Solarized Blue */
+	--link-color: #268bd2;
+	--link-hover-color: #2aa198;  /* Cyan */
+	--ed-link-color: #268bd2;
+	--ed-link-hover-color: #2aa198;
+
+	/* Hashtags - Solarized Cyan */
+	--ed-hashtag-color: #2aa198;
+	--ed-hashtag-bg: rgba(42, 161, 152, 0.15);
+
+	/* Mentions - Solarized Violet */
+	--ed-mention-color: #6c71c4;
+	--ed-mention-bg: rgba(108, 113, 196, 0.15);
+	--ed-mention-hover-bg: rgba(108, 113, 196, 0.25);
+	--ed-mention-hover-color: #6c71c4;
+
+	/* Dates - Solarized Blue */
+	--ed-datetime-color: #268bd2;
+	--ed-datetime-bg: rgba(38, 139, 210, 0.15);
+
+	/* Checkboxes */
+	--ed-check-div-border: #268bd2;
+	--ed-check-div-hover-border: #64b5f6;
+	--ed-check-done-bg: #2aa198;
+	--ed-check-done-fg: #fdf6e3;
+
+	/* Selections - soft Blue */
+	--selection-bg: rgba(38, 139, 210, 0.35);
+	--selection-fg: #657b83;
+	--ed-selection-self-bg: rgba(38, 139, 210, 0.25);
+	--ed-selection-blurred-bg: rgba(38, 139, 210, 0.1);
+
+	/* Quotes - Solarized Cyan */
+	--ed-quote-border-color: #2aa198;
+
+
+	/* Cards with Solarized surfaces */
+	--cards-bg: #fdf6e3;
+	--cards-hover-bg: #eee8d5;
+	--cards-border-color: #eee8d5;
+	--cards-border-color-focused: #93a1a1;
+    
+	/* Sidebar */
+	--side-bg-active-focus: #268bd2;
+	--side-fg-active-focus: #fdf6e3;
+	--sidebar-bg-hover: #eee8d5;
+
+	/* Command palette */
+	--cmdpal-bg-color: #fdf6e3;
+	--cmdpal-selected-bg-color: #268bd2;
+	--cmdpal-selected-fg-color: #fdf6e3;
+	--cmdpal-hover-bg-color: #eee8d5;
+	--cmdpal-border-color: #eee8d5;
+
+	/* Inputs */
+	--input-bg-color: #fdf6e3;
+	--input-border-color: #eee8d5;
+	--input-border-focus: 1px solid #268bd2;
+	--input-border-shadow: 0 0 8px rgba(38, 139, 210, 0.4);
+
+	/* Buttons */
+	--button-primary-bg-color: #268bd2;
+	--button-primary-fg-color: #fdf6e3;
+	--button-primary-bg-hover-color: #64b5f6;
+	--button-bg-color: #eee8d5;
+	--button-border-color: #eee8d5;
+	--button-bg-hover-color: #eee8d5;
+
+	/* Light shadows */
+	--color-shadow: rgba(0, 43, 54, 0.15);
+	--color-shadow-cards: 0 4px 6px rgba(0, 43, 54, 0.1);
+	--color-shadow-hover: 0 6px 12px rgba(0, 43, 54, 0.15);
+
+	/* Logo with Blue glow */
+	--logo-color: #268bd2;
+	--logo-glow-shadow: 0 0 15px rgba(38, 139, 210, 0.5), 0 0 30px rgba(38, 139, 210, 0.3);
+
+	/* Enums using Solarized colors */
+	--enum-red-bg: rgba(220, 50, 47, 0.25);
+	--enum-red-fg: #dc322f;
+	--enum-orange-bg: rgba(203, 75, 22, 0.25);
+	--enum-orange-fg: #cb4b16;
+	--enum-yellow-bg: rgba(181, 137, 0, 0.25);
+	--enum-yellow-fg: #b58900;
+	--enum-green-bg: rgba(133, 153, 0, 0.25);
+	--enum-green-fg: #859900;
+	--enum-cyan-bg: rgba(42, 161, 152, 0.25);
+	--enum-cyan-fg: #2aa198;
+	--enum-blue-bg: rgba(38, 139, 210, 0.25);
+	--enum-blue-fg: #268bd2;
+	--enum-purple-bg: rgba(108, 113, 196, 0.25);
+	--enum-purple-fg: #6c71c4;
+	--enum-pink-bg: rgba(211, 54, 130, 0.25);
+	--enum-pink-fg: #d33682;
+
+  /* Note blocks */
+  --ed-block-note-bg: color-mix(in srgb, transparent 60%, #268bd2 10%);
+  --ed-block-note-border: #268bd2;
+
+  /* Caret */
+  --ed-caret-self-radius: 2px;
+  --ed-caret-self-border-width: 0px;
+  --ed-caret-self-background: color-mix(in srgb, #268bd2 70%, transparent);
+  --ed-caret-self-box-shadow: 0 0 2px #268bd2;
+
+  /* Panel */
+  --prop-border-focused: #fdf6e3;
+  --prop-bg-focused: rgba(38, 139, 210, 0.4);
+  --shadow-sticky-row: 0 6px 12px rgba(0, 43, 54, 0);
+  --ed-drag-handle-color: #2aa198;
+  --ed-drag-handle-hover-border: #2aa198;
+
+	/* Borders and dividers - more visible */
+	--ed-container-border-color: rgb(147, 161, 161);
+	--ed-indent-line-color: #93a1a1;
+	--ed-code-border: rgba(147, 161, 161, 0.4);
+  --prop-table-cell-border: #93a1a1;
+  
+}
