@@ -150,26 +150,26 @@ html[data-theme="basic-solarized-dark"] {
 	--enum-pink-bg: rgba(211, 54, 130, 0.25);
 	--enum-pink-fg: #d33682;
 
-  /* Note blocks */
-  --ed-block-note-bg: color-mix(in srgb, transparent 60%, #268bd2 8%);
-  --ed-block-note-border: #268bd2;
-
-  /* Caret */
-  --ed-caret-self-radius: 2px;
-  --ed-caret-self-border-width: 0px;
-  --ed-caret-self-background: color-mix(in srgb, #268bd2 70%, transparent);
-  --ed-caret-self-box-shadow: 0 0 2px #268bd2;
-
-  /* Panel */
-  --prop-border-focused: #002b36;
-  --prop-bg-focused: rgba(38, 139, 210, 0.4);
-  --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
-  --ed-drag-handle-color: #2aa198;
-  --ed-drag-handle-hover-border: #2aa198;
-
-  /* Borders and dividers - more visible */
+	/* Note blocks */
+	--ed-block-note-bg: color-mix(in srgb, transparent 60%, #268bd2 8%);
+	--ed-block-note-border: #268bd2;
+	
+	/* Caret */
+	--ed-caret-self-radius: 2px;
+	--ed-caret-self-border-width: 0px;
+	--ed-caret-self-background: color-mix(in srgb, #268bd2 70%, transparent);
+	--ed-caret-self-box-shadow: 0 0 2px #268bd2;
+	
+	/* Panel */
+	--prop-border-focused: #002b36;
+	--prop-bg-focused: rgba(38, 139, 210, 0.4);
+	--shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+	--ed-drag-handle-color: #2aa198;
+	--ed-drag-handle-hover-border: #2aa198;
+	
+	/* Borders and dividers - more visible */
 	--ed-container-border-color: rgb(7, 54, 66);
 	--ed-indent-line-color: #073642;
 	--ed-code-border: rgba(7, 54, 66, 0.4);
-  --prop-table-cell-border: #073642;
+	--prop-table-cell-border: #073642;
 }
