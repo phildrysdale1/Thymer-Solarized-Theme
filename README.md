@@ -18,6 +18,6 @@ If you add any areas I've missed please do submit a PR or tag me in the Discord 
 
 
 ### Solarized Dark
-<img width="1542" height="1236" alt="image" src="https://github.com/user-attachments/assets/e9732040-88c4-4d2d-a25d-38808c3f12eb" />
+<img width="1544" height="1238" alt="image" src="https://github.com/user-attachments/assets/e6d2047f-9498-48ae-b60f-39e6d8d5b3ab" />
 
 
