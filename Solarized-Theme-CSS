@@ -1,0 +1,457 @@
+
+/*
+* Solarized Theme for Thymer
+* Official Solarized dark/light color scheme by Ethan Schoonover
+* Variants: Solarized Dark and Solarized Light
+*
+* Core Usage (per Solarized guidance):
+* - Dark mode: background base03 (#002b36), body text base0 (#839496)
+* - Light mode: background base3 (#fdf6e3), body text base00 (#657b83)
+* - Highlight pairing: base02 (#073642) : base1 (#93a1a1) in dark (inverted for light)
+*
+* Accents:
+* - yellow  #b58900
+* - orange  #cb4b16
+* - red     #dc322f
+* - magenta #d33682
+* - violet  #6c71c4
+* - blue    #268bd2
+* - cyan    #2aa198
+* - green   #859900
+*/
+
+/* ------------------------------------------- */
+/* Solarized Dark                              */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-solarized"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Violet                       */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #6c71c4;
+    }
+
+    --text-base-size: 16px;
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Solarized Bases     */
+    /* ------------------------------------------- */
+    --color-bg-50: #586e75;
+    --color-bg-100: #073642;
+    --color-bg-150: #073642;
+    --color-bg-200: #002b36;
+    --color-bg-300: #002b36;
+    --color-bg-400: #002b36;
+    --color-bg-500: #002b36;
+    --color-bg-600: #002b36;
+    --color-bg-700: #073642;
+    --color-bg-800: #073642; /* Sidebar - background light */
+    --color-bg-900: #002b36;  /* Main window - main background */
+    --color-bg-950: #001f27;
+    --color-bg-500-50: rgba(0, 43, 54, 0.5);
+    --color-bg-950-50: rgba(0, 31, 39, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Solarized Blue         */
+    /* ------------------------------------------- */
+    --color-primary-50: #fdf6e3;
+    --color-primary-100: #eee8d5;
+    --color-primary-200: #93a1a1;
+    --color-primary-300: #839496;
+    --color-primary-400: #268bd2; /* Solarized Blue */
+    --color-primary-500: #2aa198;
+    --color-primary-600: #2aa198;
+    --color-primary-700: #6c71c4;
+    --color-primary-800: #d33682;
+    --color-primary-900: #dc322f;
+    --color-primary-950: #002b36;
+    --color-primary-400-70: rgba(38, 139, 210, 0.7);
+    --color-primary-950-20: rgba(0, 43, 54, 0.2);
+    --color-primary-text-100: #002b36;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Solarized Foreground     */
+    /* ------------------------------------------- */
+    --color-text-50: #fdf6e3;
+    --color-text-100: #839496; /* base0 */
+    --color-text-200: #93a1a1; /* base1 */
+    --color-text-300: #93a1a1;
+    --color-text-400: #839496;
+    --color-text-500: #657b83; /* base00 */
+    --color-text-600: #586e75; /* base01 */
+    --color-text-700: #268bd2; /* blue accent */
+    --color-text-800: #839496;
+    --color-text-900: #073642; /* base02 */
+    --color-text-950: #586e75;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Solarized Accents     */
+    /* ------------------------------------------- */
+    --text-ok: #859900;
+    --text-status-online: #859900;
+    --text-warning: #b58900;
+    --text-error: #dc322f;
+    --bg-alert: #dc322f;
+    --fg-alert: #fdf6e3;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #268bd2;
+    --link-hover-color: #2aa198;
+    --ed-link-color: #268bd2;
+    --ed-link-hover-color: #2aa198;
+
+    --ed-hashtag-color: #6c71c4;
+    --ed-hashtag-bg: rgba(108, 113, 196, 0.15);
+
+    --ed-mention-color: #2aa198;
+    --ed-mention-bg: rgba(42, 161, 152, 0.15);
+    --ed-mention-hover-bg: rgba(42, 161, 152, 0.25);
+    --ed-mention-hover-color: #268bd2;
+
+    --ed-datetime-color: #cb4b16;
+    --ed-datetime-bg: rgba(203, 75, 22, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Blue               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #268bd2;
+    --ed-check-div-hover-border: #2aa198;
+    --ed-check-done-bg: #268bd2;
+    --ed-check-done-fg: #002b36;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #586e75 !important;
+        text-decoration-color: #586e75 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(7, 54, 66, 0.85); /* base02 highlight bg */
+    --selection-fg: #93a1a1;              /* base1 highlight fg  */
+    --ed-selection-self-bg: rgba(7, 54, 66, 0.85);
+    --ed-selection-blurred-bg: rgba(7, 54, 66, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #268bd2 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #268bd2;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #6c71c4;
+    
+    --ed-container-border-color: rgba(88, 110, 117, 0.25);   /* base01 */
+    --ed-container-bg-color: rgba(131, 148, 150, 0.08); /* base0 */
+  
+    --ed-code-bg: rgba(88, 110, 117, 0.25);   /* base01 */
+    --ed-code-border: rgba(131, 148, 150, 0.08); /* base0 */
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #b58900 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(38, 139, 210, 0.1);
+    --ed-block-note-border: #268bd2;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #002b36;
+    --cards-hover-bg: #073642;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #268bd2;
+    --side-fg-active-focus: #002b36;
+    --sidebar-bg-hover: #073642;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #002b36;
+    --cmdpal-selected-bg-color: #268bd2;
+    --cmdpal-selected-fg-color: #002b36;
+    --cmdpal-hover-bg-color: #073642;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #002b36;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #268bd2;
+    --input-border-shadow: 0 0 8px rgba(38, 139, 210, 0.4);
+
+    --button-primary-bg-color: #268bd2;
+    --button-primary-fg-color: #002b36;
+    --button-primary-bg-hover-color: #2aa198;
+    --button-bg-color: #073642;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #586e75;
+
+    --color-shadow: rgba(0, 31, 39, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(0, 31, 39, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(0, 31, 39, 0.5);
+
+    --logo-color: #268bd2;
+    --logo-glow-shadow:
+        0 0 15px rgba(38, 139, 210, 0.35),
+        0 0 30px rgba(38, 139, 210, 0.2);
+
+    /* Enums - Solarized Accents */
+    --enum-red-bg: rgba(220, 50, 47, 0.25);
+    --enum-red-fg: #dc322f;
+    --enum-orange-bg: rgba(203, 75, 22, 0.25);
+    --enum-orange-fg: #cb4b16;
+    --enum-yellow-bg: rgba(181, 137, 0, 0.25);
+    --enum-yellow-fg: #b58900;
+    --enum-green-bg: rgba(133, 153, 0, 0.25);
+    --enum-green-fg: #859900;
+    --enum-cyan-bg: rgba(42, 161, 152, 0.25);
+    --enum-cyan-fg: #2aa198;
+    --enum-blue-bg: rgba(38, 139, 210, 0.25);
+    --enum-blue-fg: #268bd2;
+    --enum-purple-bg: rgba(108, 113, 196, 0.25);
+    --enum-purple-fg: #6c71c4;
+    --enum-pink-bg: rgba(211, 54, 130, 0.25);
+    --enum-pink-fg: #d33682;
+
+    --prop-border-focused: #002b36;
+    --prop-bg-focused: rgba(38, 139, 210, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #268bd2;
+    --ed-drag-handle-hover-border: #2aa198;
+
+    --gradient-scrim: none;
+}
+
+/* ------------------------------------------- */
+/* Solarized Light                             */
+/* ------------------------------------------- */
+html[data-theme="basic-white-solarized"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Violet                       */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #6c71c4;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Solarized Light     */
+    /* ------------------------------------------- */
+    --color-bg-50: #586e75;
+    --color-bg-100: #93a1a1;
+    --color-bg-150: #eee8d5;
+    --color-bg-200: #fdf6e3; /* base3 */
+    --color-bg-300: #ffffff;
+    --color-bg-400: #fdf6e3;
+    --color-bg-500: #fdf6e3;
+    --color-bg-600: #fdf6e3;
+    --color-bg-700: #ffffff;
+    --color-bg-800: #eee8d5; /* Sidebar */
+    --color-bg-900: #fdf6e3; /* Main */
+    --color-bg-950: #ffffff;
+    --color-bg-500-50: rgba(253, 246, 227, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Solarized Blue         */
+    /* ------------------------------------------- */
+    --color-primary-50: #002b36;
+    --color-primary-100: #073642;
+    --color-primary-200: #586e75;
+    --color-primary-300: #657b83;
+    --color-primary-400: #268bd2; /* Solarized Blue */
+    --color-primary-500: #2aa198;
+    --color-primary-600: #2aa198;
+    --color-primary-700: #6c71c4;
+    --color-primary-800: #d33682;
+    --color-primary-900: #dc322f;
+    --color-primary-950: #002b36;
+    --color-primary-400-70: rgba(38, 139, 210, 0.7);
+    --color-primary-950-20: rgba(0, 43, 54, 0.2);
+    --color-primary-text-100: #fdf6e3;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Solarized Ink            */
+    /* ------------------------------------------- */
+    --color-text-50: #002b36;
+    --color-text-100: #657b83; /* base00 (body text for light) */
+    --color-text-200: #586e75; /* base01 */
+    --color-text-300: #586e75;
+    --color-text-400: #657b83;
+    --color-text-500: #839496; /* base0 */
+    --color-text-600: #93a1a1; /* base1 */
+    --color-text-700: #268bd2;
+    --color-text-800: #657b83;
+    --color-text-900: #fdf6e3;
+    --color-text-950: #93a1a1;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Solarized Accents     */
+    /* ------------------------------------------- */
+    --text-ok: #859900;
+    --text-status-online: #859900;
+    --text-warning: #b58900;
+    --text-error: #dc322f;
+    --bg-alert: #dc322f;
+    --fg-alert: #fdf6e3;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #268bd2;
+    --link-hover-color: #2aa198;
+    --ed-link-color: #268bd2;
+    --ed-link-hover-color: #2aa198;
+
+    --ed-hashtag-color: #6c71c4;
+    --ed-hashtag-bg: rgba(108, 113, 196, 0.1);
+
+    --ed-mention-color: #2aa198;
+    --ed-mention-bg: rgba(42, 161, 152, 0.1);
+    --ed-mention-hover-bg: rgba(42, 161, 152, 0.2);
+    --ed-mention-hover-color: #268bd2;
+
+    --ed-datetime-color: #cb4b16;
+    --ed-datetime-bg: rgba(203, 75, 22, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Blue               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #268bd2;
+    --ed-check-div-hover-border: #2aa198;
+    --ed-check-done-bg: #268bd2;
+    --ed-check-done-fg: #fdf6e3;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #93a1a1 !important;
+        text-decoration-color: #93a1a1 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(238, 232, 213, 0.85); /* base2 highlight bg */
+    --selection-fg: #586e75;                  /* base01 highlight fg */
+    --ed-selection-self-bg: rgba(238, 232, 213, 0.85);
+    --ed-selection-blurred-bg: rgba(238, 232, 213, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #268bd2 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #268bd2;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #6c71c4;
+  
+    --ed-container-border-color: rgba(147, 161, 161, 0.25); /* base1 */
+    --ed-container-bg-color: rgba(101, 123, 131, 0.08); /* base00 */
+  
+    --ed-code-bg: rgba(147, 161, 161, 0.25); /* base1 */
+    --ed-code-border: rgba(101, 123, 131, 0.08); /* base00 */
+  
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #b58900 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(38, 139, 210, 0.08);
+    --ed-block-note-border: #268bd2;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #fdf6e3;
+    --cards-hover-bg: #eee8d5;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #268bd2;
+    --side-fg-active-focus: #fdf6e3;
+    --sidebar-bg-hover: #eee8d5;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #fdf6e3;
+    --cmdpal-selected-bg-color: #268bd2;
+    --cmdpal-selected-fg-color: #fdf6e3;
+    --cmdpal-hover-bg-color: #eee8d5;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #fdf6e3;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #268bd2;
+    --input-border-shadow: 0 0 8px rgba(38, 139, 210, 0.3);
+
+    --button-primary-bg-color: #268bd2;
+    --button-primary-fg-color: #fdf6e3;
+    --button-primary-bg-hover-color: #2aa198;
+    --button-bg-color: #ffffff;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #eee8d5;
+
+    --color-shadow: rgba(0, 43, 54, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(0, 43, 54, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(0, 43, 54, 0.15);
+
+    --logo-color: #268bd2;
+    --logo-glow-shadow:
+        0 0 15px rgba(38, 139, 210, 0.25),
+        0 0 30px rgba(38, 139, 210, 0.15);
+
+    /* Enums - Solarized Accents */
+    --enum-red-bg: rgba(220, 50, 47, 0.15);
+    --enum-red-fg: #dc322f;
+    --enum-orange-bg: rgba(203, 75, 22, 0.15);
+    --enum-orange-fg: #cb4b16;
+    --enum-yellow-bg: rgba(181, 137, 0, 0.15);
+    --enum-yellow-fg: #b58900;
+    --enum-green-bg: rgba(133, 153, 0, 0.15);
+    --enum-green-fg: #859900;
+    --enum-cyan-bg: rgba(42, 161, 152, 0.15);
+    --enum-cyan-fg: #2aa198;
+    --enum-blue-bg: rgba(38, 139, 210, 0.15);
+    --enum-blue-fg: #268bd2;
+    --enum-purple-bg: rgba(108, 113, 196, 0.15);
+    --enum-purple-fg: #6c71c4;
+    --enum-pink-bg: rgba(211, 54, 130, 0.15);
+    --enum-pink-fg: #d33682;
+
+    --prop-border-focused: #fdf6e3;
+    --prop-bg-focused: rgba(38, 139, 210, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #268bd2;
+    --ed-drag-handle-hover-border: #2aa198;
+
+    --gradient-scrim: none;
+}
